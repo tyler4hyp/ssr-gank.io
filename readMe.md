@@ -1,6 +1,6 @@
 # 一个基于express+nunjucks的SSR项目（Gank.io)
 
-所有接口由https://gank.io/提供(在此感谢站长)，服务器框架为express, 模板使用nunjucks, 支持服务端渲染和异步加载
+所有接口由 https://gank.io/ 提供(在此感谢站长)，服务器框架为express, 模板使用nunjucks, 支持服务端渲染和异步加载
 
 需要安装nodemon
 
