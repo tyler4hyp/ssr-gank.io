@@ -1,0 +1,25 @@
+{% extends "../base/index.njk" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="./index/index.css"/>
+{% endblock %}
+
+{% block body %}
+{% include "../../components/header/index.njk" %}
+<div id="index">
+    {% include "../../components/content-tab/index.njk" %}
+    <div class="main-content">
+        {% for cate in list %}
+            <div class="category" data-index="{{ loop.index0 }}">
+                {% for item in cate %}
+                    {% include "../../components/news-item/index.njk" %}
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="./index/index.js"></script>
+{% endblock %}

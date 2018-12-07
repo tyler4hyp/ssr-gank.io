@@ -1,0 +1,42 @@
+{
+  "name": "node-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && gulp && node app",
+    "dev": "NODE_ENV=development nodemon -e njk app"
+  },
+  "author": "hyp",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.3",
+    "flyio": "^0.6.5",
+    "nunjucks": "^3.1.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "babel-loader": "^8.0.4",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-hot-loader": "^1.4.2",
+    "css-loader": "^1.0.0",
+    "del": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "glob": "^7.1.3",
+    "gulp": "^3.9.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "node-sass": "^4.9.3",
+    "nunjucks-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-middleware": "^3.3.0",
+    "webpack-hot-middleware": "^2.24.0"
+  }
+}

@@ -1,0 +1,21 @@
+#index{
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    min-height: 100%;
+
+    .main-content{
+        margin-left: 1rem;
+        padding-top: 2rem;
+        flex-grow: 1;
+
+        .category{
+            display: none;
+        }
+
+        .show{
+            display: block;
+        }
+    }
+}

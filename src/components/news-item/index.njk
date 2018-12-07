@@ -1,0 +1,8 @@
+<div class="news-item">
+    <p><a href="{{ item.url }}">{{ item.desc }}</a></p>
+    {% if item.images %}
+        {% for img in item.images %}
+            <img src="{{ img }}" />
+        {% endfor %}
+    {% endif %}
+</div>

@@ -1,0 +1,24 @@
+{% extends "../base/index.njk" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="./all/index.css"/>
+{% endblock %}
+
+{% block body %}
+{% include "../../components/header/index.njk" %}
+<div id="all">
+    {% include "../../components/content-tab/index.njk" %}
+    <div class="main-content">
+        <div class="list-wrap">
+            {% for item in cate %}
+                {% include "../../components/news-item/index.njk" %}
+            {% endfor %}
+        </div>
+        <p class="load-more-wrap"><button class="load-more">Load More</button></p>
+    </div>
+</div>
+{% endblock %}
+
+{% block script %}
+<script src="./all/index.js"></script>
+{% endblock %}
